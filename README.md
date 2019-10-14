@@ -1,2 +1,2 @@
-# Ejercicios-Java
-Ejercicios del libro Aprende Java
+# Ejercicios Java
+Aprende Java --> Contiene ejercicios del libro Aprende Java

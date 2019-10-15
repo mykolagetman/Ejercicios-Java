@@ -18,7 +18,8 @@ public class Ejercicio59 {
 	System.out.print(" ");
       }
       System.out.print("*\n");
-      
+    
+    // Pinta el pico del árbol
     for (i = 0; i < altura - 3; i++) {
       System.out.print(" ");
     }

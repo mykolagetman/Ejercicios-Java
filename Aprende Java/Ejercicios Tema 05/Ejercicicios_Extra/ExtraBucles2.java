@@ -1,4 +1,4 @@
-public class Extra2 {
+public class ExtraBucles2 {
   
   public static void main (String[] args) {
     System.out.println("Este programa pinta una pirámide.");
@@ -11,6 +11,7 @@ public class Extra2 {
     
     int linea = 1;
     int espaciosIzq = altura;
+    int i;
     String imprimeEspacios;
     String espacios = " ";
     

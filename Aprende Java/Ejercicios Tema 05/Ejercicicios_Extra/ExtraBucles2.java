@@ -10,17 +10,19 @@ public class ExtraBucles2 {
     char c = System.console().readLine().charAt(0);
     
     int linea = 1;
-    int espaciosIzquierda = altura;
+    int espaciosIzquierda = altura - 1;
     String imprimeLinea;
     String espacios = " ";
     String caracteres = c + " ";
     
     while (linea <= altura) {
-    
-      imprimeLinea = String.format("%%%ds%%s", espaciosIzquierda);
-      System.out.printf(imprimeLinea, espacios, caracteres);
-      
-      System.out.println();
+      // Imprime con espacios hasta que alcanza el valor de %0s%s
+      if (espaciosIzquierda >= 1) {
+	imprimeLinea = String.format("%%%ds%%s\n", espaciosIzquierda);
+	System.out.printf(imprimeLinea, espacios, caracteres);
+      } else {
+	System.out.printf("%s\n", caracteres);
+      }
       
       linea++;
       espaciosIzquierda--;

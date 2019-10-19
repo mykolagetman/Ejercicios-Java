@@ -11,33 +11,33 @@ public class ExtraBucles3 {
     boolean adivinado;
   
     
-    do { // Incompleto falta poner cual es el numero más cercano al numero a adivinar
+    do {
       adivinado = false;
       
       System.out.print("\nIntroduce un número: ");
       adivina = Integer.parseInt(System.console().readLine());
       
       if (adivina > num) {
-	if ((mayor - num) > (adivina - num)) {
-	  mayor = adivina;
-	}
+				if ((mayor - num) > (adivina - num)) {
+	  		mayor = adivina;
+				}
 	
-	System.out.println("\n" + adivina + " es más grande que el número a "
-	  + "adivinar.\nNúmero mayor más cercano: " + mayor + "\nNúmero menor "
-	    + "más cercano: " + menor);
+				System.out.println("\n" + adivina + " es más grande que el número a "
+					+ "adivinar.\nNúmero mayor más cercano: " + mayor + "\nNúmero menor "
+					+ "más cercano: " + menor);
 	    
       } else if (adivina < num) {
-	if ((num - menor) > (num - adivina)) {
-	  menor = adivina;
-	}
+				if ((num - menor) > (num - adivina)) {
+					menor = adivina;
+				}
 	
-	System.out.println("\n" + adivina + " es más pequeño que el número a "
-	  + "adivinar.\nNúmero mayor más cercano: " + mayor + "\nNúmero menor "
-	    + "más cercano: " + menor);
+				System.out.println("\n" + adivina + " es más pequeño que el número a "
+					+ "adivinar.\nNúmero mayor más cercano: " + mayor + "\nNúmero menor "
+					+ "más cercano: " + menor);
 	    
       } else {
-	System.out.println("\n¡¡Enhorabuena, has acertado el número!!");
-	adivinado = true;
+				System.out.println("\n¡¡Enhorabuena, has acertado el número!!");
+				adivinado = true;
       }
     } while (adivinado == false);
   } 
